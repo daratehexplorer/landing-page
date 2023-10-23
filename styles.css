@@ -1,0 +1,11 @@
+body {
+    font-family: Roboto;
+}
+
+.footer, .hero {
+    background-color: #1f2937;
+}
+
+.footer, .header-logo, .title-main {
+    color: white;
+}
