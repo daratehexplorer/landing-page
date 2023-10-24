@@ -1,23 +1,43 @@
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+/* Background and font colors */
+
+.hero, .footer {
     background-color: #1f2937;
-    display: flex;
-    flex-direction: column;
 }
 
-.main {
-    font-size: 48px;
-    font-weight: bolder;
-    color: #F9FAF8;
-}
-
-.footer, .text .subtext, a {
+.footer, .text .subtext, .image, .action-text, a {
     font-size: 18px;
     color: #E5E7EB;
 }
 
-a {
-    text-decoration: none;
+button {
+    display: flex;
+    border-radius: 6px;
+    background-color: #3882f6;
+    color: #F9FAF8;
+    font-weight: bolder;
+    padding: 6px 8px;
+    width: 90px;
+    height: 30px;
+    justify-content: center;
+    border-style: none;
+}
+
+/* Header and title section */ 
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 500px
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 200px 100px 200px;
 }
 
 .logo {
@@ -25,12 +45,99 @@ a {
     color: #F9FAF8;
     font-weight: bold;
 }
+.links {
+    display: flex;
+    gap: 50px;
+}
+
+a {
+    text-decoration: none;  
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    height: 200px;
+    flex: 0 0 600px;
+}
+
+.main-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 200px 24px 200px;
+    gap: 48px;
+    }
+
+.main {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Random info section */
 
 .box, .random {
     background-color: white;
-    flex: auto;
-    display: flex;
 }
+
+.random {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 200px 100px 200px;
+    gap: 48px;
+}
+
+.info {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+
+.card-image {
+    display: flex;
+    height: 160px;
+    width: 160px;
+    border-radius: 12px;
+    border: 5px solid #3882f6;
+    margin-bottom: 10px;
+}
+
+.cards, .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    gap: 24px;
+    width: 900px;
+}
+.card {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .subtext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #1f2937;
+}
+/* Quote section */
 
 .quote {
     background-color: #E5E7EB;
@@ -38,21 +145,54 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 100px;
-    
-}
+    padding: 100px 300px;
+    }
 
 .source {
     font-weight: bolder;
+    text-align: end;
+    width: 1100px;
 }
 
 .quote .text {
     font-style: italic;
     font-weight: lighter;
     font-size: 36px;
-    width:66%;
+    width: 1100px;
 }
+
+/* Call to action section */
+
+.action {
+    border-radius: 6px;
+    background-color: #3882f6;
+    padding: 24px 100px 24px 100px;
+    width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.call-to-action {
+    color: #F9FAF8;
+    font-weight: bolder;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+/* Footer section */
 
 .footer {
     display: flex;
@@ -61,30 +201,9 @@ a {
     padding: 24px;
 }
 
-.action {
-    border-radius: 12px;
-    background-color: #3882f6;
-    width:66%;
-    padding: 50px;
-    margin: 100px;
-}
 
-.box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
 
-.text .title {
-    color: #F9FAF8;
-    font-weight: bolder;
-}
 
-button {
-    border-radius: 12px;
-    background-color: #3882f6;
-    color: #F9FAF8;
-    font-weight: bolder;
-    padding: 8px 12px;
-}
+
+
+
