@@ -1,11 +1,90 @@
 body {
-    font-family: Roboto;
-}
-
-.footer, .hero {
+    font-family: 'Roboto', sans-serif;
     background-color: #1f2937;
+    display: flex;
+    flex-direction: column;
 }
 
-.footer, .header-logo, .title-main {
-    color: white;
+.main {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.footer, .text .subtext, a {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+.box, .random {
+    background-color: white;
+    flex: auto;
+    display: flex;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    color: #1f2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    
+}
+
+.source {
+    font-weight: bolder;
+}
+
+.quote .text {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 36px;
+    width:66%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.action {
+    border-radius: 12px;
+    background-color: #3882f6;
+    width:66%;
+    padding: 50px;
+    margin: 100px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.text .title {
+    color: #F9FAF8;
+    font-weight: bolder;
+}
+
+button {
+    border-radius: 12px;
+    background-color: #3882f6;
+    color: #F9FAF8;
+    font-weight: bolder;
+    padding: 8px 12px;
 }
